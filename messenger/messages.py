@@ -7,6 +7,7 @@
 #    This class stores the notion of a collection of messages
 ########################################################################
 
+from control import Control
 import control, message
 
 ##################################################
@@ -82,3 +83,15 @@ class Messages:
         except FileNotFoundError:
             print(f"ERROR! Unable to open file \"{filename}\"")
             return
+        
+    def _security_condition_read(self, assetControl: Control, subjectControl: Control) -> bool:
+        """
+        Check if the user has the required security level to read the message.
+        """
+        return subjectControl >= assetControl
+    
+    def _security_condition_write(self, assetControl: Control, subjectControl: Control) -> bool:
+        """
+        Check if the user has the required security level to write the message.
+        """
+        return subjectControl <= assetControl

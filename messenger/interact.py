@@ -3,7 +3,7 @@
 #    INTERACT
 # Author:
 #    Br. Helfrich, Kyle Mueller, <your name here if you made a change>
-# Summary: 
+# Summary:
 #    This class allows one user to interact with the system
 ########################################################################
 
@@ -19,8 +19,8 @@ class User:
         self.password = password
 
 userlist = [
-   [ "AdmiralAbe",     "password" ],  
-   [ "CaptainCharlie", "password" ], 
+   [ "AdmiralAbe",     "password" ],
+   [ "CaptainCharlie", "password" ],
    [ "SeamanSam",      "password" ],
    [ "SeamanSue",      "password" ],
    [ "SeamanSly",      "password" ]
