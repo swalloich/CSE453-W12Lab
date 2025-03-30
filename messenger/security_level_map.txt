@@ -1,0 +1,5 @@
+AdmiralAbe|SECRET
+CaptainCharlie|PRIVILEGED
+SeamanSam|CONFIDENTIAL
+SeamanSue|CONFIDENTIAL
+SeamanSly|CONFIDENTIAL
