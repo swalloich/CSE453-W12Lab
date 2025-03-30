@@ -22,7 +22,6 @@ class Control:
         Initialize the Control class with predefined security levels.
         """
         self._levels = self._load_levels_from_file(self.CONTROL_LEVELS_FILE)
-        self.current_level = 0
         self._value = 0
         self._name = list(self._levels.keys())[0]
 
