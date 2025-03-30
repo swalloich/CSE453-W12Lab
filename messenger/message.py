@@ -2,7 +2,7 @@
 # COMPONENT:
 #    MESSAGE
 # Author:
-#    Br. Helfrich, Kyle Mueller, <your name here if you made a change>
+#    Br. Helfrich, Kyle Mueller, Jacob Nelson <your name here if you made a change>
 # Summary:
 #    This class stores the notion of a message
 ########################################################################

@@ -2,7 +2,7 @@
 # COMPONENT:
 #    INTERACT
 # Author:
-#    Br. Helfrich, Kyle Mueller, <your name here if you made a change>
+#    Br. Helfrich, Kyle Mueller, Jacob Nelson <your name here if you made a change>
 # Summary:
 #    This class allows one user to interact with the system
 ########################################################################
