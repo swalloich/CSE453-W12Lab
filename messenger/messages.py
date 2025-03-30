@@ -31,7 +31,8 @@ class Messages:
     def display(self, subjectControl: Control) -> None:
         for m in self._messages:
             try:
-                m.display_properties(subjectControl)
+                if not m.empty:
+                    m.display_properties(subjectControl)
             except PermissionError:
                 pass
 

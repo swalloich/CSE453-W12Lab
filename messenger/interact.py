@@ -7,7 +7,6 @@
 #    This class allows one user to interact with the system
 ########################################################################
 
-import messages
 from control import Control
 from os import path
 
@@ -34,6 +33,7 @@ class User:
             print("Security level map file not found.")
             return
 
+# I fail to see how this fits the description of step 5 on the assignment page.
 userlist = [
    [ "AdmiralAbe",     "password"],
    [ "CaptainCharlie", "password"],
@@ -102,10 +102,10 @@ class Interact:
     ################################################## 
     def update(self):
         id_ = self._prompt_for_id("update")
-        if not self._p_messages.show(id_):
+        if not self._p_messages.show(id_, self._security_level):
             print(f"ERROR! Message ID \'{id_}\' does not exist\n")
             return
-        self._p_messages.update(id_, self._prompt_for_line("message"))
+        self._p_messages.update(id_, self._prompt_for_line("message"), self._security_level)
         print()
             
     ##################################################

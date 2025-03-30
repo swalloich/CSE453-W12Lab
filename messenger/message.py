@@ -44,6 +44,10 @@ class Message:
         Message._id_next += 1
         self._empty = False
 
+    @property
+    def empty(self):
+        return self._empty
+
     ##################################################
     # MESSAGE :: GET ID
     # Determine the unique ID of this message
@@ -88,7 +92,7 @@ class Message:
     def clear(self, subjectControl: Control) -> None:
         if not self._security_condition_write(self._control, subjectControl):
             raise PermissionError("You do not have permission to delete this message.")
-        self._control = Control()
+        self._control = Control
         self._text = "Empty"
         self._author = ""
         self._date = ""
